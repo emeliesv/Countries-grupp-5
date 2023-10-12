@@ -1,32 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Shantell+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Shantell+Sans:wght@300;400;700&display=swap");
 
-*{
-    box-sizing: border-box;
-    color: black;
+* {
+  box-sizing: border-box;
+  color: black;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
-    height: 30vh;
-    background-image: url(headerimg.png);
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-bottom: 2px solid black;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 30vh;
+  background-image: url(headerimg.png);
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 2px solid black;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-section{
-    font-family: 'Shadows Into Light', cursive;
-    height: 100vh;
+section {
+  font-family: "Shadows Into Light", cursive;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
+  display: none;
+}
+
+article {
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article h1 {
+  font-size: 2em;
+}
+
+.card {
+  border: 2px solid black;
+  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, 0.47);
+  border-top-right-radius: 25px 120px;
+  border-bottom-left-radius: 23px 120px;
+}
+.card-text {
+  font-size: 1.5em;
+}
+
+img {
+  width: 50%;
+  border: 1px solid black;
+}
+
+footer {
+  font-family: "Shadows Into Light", cursive;
+  background-color: white;
+  clear: both;
+  padding: 10px;
+  text-align: center;
+  height: 10vh;
+  border-top: 2px solid black;
+}
+
+@media (min-width: 768px) {
+  nav {
     float: left;
     height: 100%;
     width: 30%;
@@ -34,57 +81,28 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-right: 2px solid black;
-    padding: 8%;
+  }
 
-}
+  .ikon {
+    display: none;
+  }
 
-a {
+  a {
     padding: 10px;
     text-decoration: none;
     font-size: 2em;
-}
+  }
 
-a:hover{
-    color:#4F697B;
-}
+  a:hover {
+    color: #4f697b;
+  }
 
-article {
+  article {
     float: left;
     padding: 20px;
     width: 70%;
-    background-color: white;
-    height: 100%;
-    text-align: center;
+    height: 70%;
+  }
 }
-
-article h1 {
-    font-size: 2em;
-}
-
-.card {
-    border: 2px solid black;
-    box-shadow: 5px 5px 16px 1px rgba(0,0,0,0.47);
-    border-top-right-radius: 25px 120px;
-    border-bottom-left-radius: 23px 120px;
-}
-.card-text {
-    margin: 10%;
-    font-size: 1.5em;
-}
-
-img{
-    width: 70%;
-    border: 1px solid black;
-}
-
-footer {
-    font-family: 'Shadows Into Light', cursive;
-    background-color: white;
-    clear: both;
-    padding: 10px;
-    text-align: center;
-    height: 10%;
-    border-top: 2px solid black;
-}
-
